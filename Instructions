@@ -1,0 +1,4 @@
+https://github.com/sekilab/RoadDamageDetector
+
+Train: python train.py --img 640 --cfg yolov5s.yaml --hyp hyp.scratch-high.yaml --batch 32 --epochs 100 --data damage.yml --weights yolov5s.pt --workers 32 --name yolo_road_damage
+Test: python detect.py --img 640 --conf 0.4 --source ../test/ --weights runs/train/yolo_road_damage5/weights/best.pt
