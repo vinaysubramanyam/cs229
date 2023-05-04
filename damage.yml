@@ -1,0 +1,9 @@
+train: images 
+#val:  ../Road_Sign_Dataset/images/val/
+test: ../test/images
+
+# number of classes
+nc: 4
+
+# class names
+names: ['D00', 'D10', 'D20', 'D40']
